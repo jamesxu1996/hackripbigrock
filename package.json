@@ -1,0 +1,22 @@
+{
+  "name": "hackripbigrock",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sam-lee-py/hackripbigrock.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sam-lee-py/hackripbigrock/issues"
+  },
+  "homepage": "https://github.com/sam-lee-py/hackripbigrock#readme",
+  "dependencies": {
+    "typed.js": "^2.0.12"
+  }
+}
