@@ -48,3 +48,13 @@ html {
   #cocktail li:not(:last-of-type) {
     border-bottom: 1px solid #fff;
   }
+
+  #today {
+    position: fixed;
+    top: 0;
+  }
+
+  #weather {
+    position: fixed;
+    top: 0;
+  }
