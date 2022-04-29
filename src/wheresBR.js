@@ -1,5 +1,5 @@
 function fetchRequest(){
-let kanyeFetch = fetch("https://api.kanye.rest")
+fetch("https://api.kanye.rest")
 .then((response) => response.json())
 .then((data) => {
     let para = document.querySelector("p");
@@ -8,7 +8,7 @@ let kanyeFetch = fetch("https://api.kanye.rest")
 })
 }
 
-let btn = document.querySelector("button").addEventListener("click", function(event){
+let btn = document.getElementById("brQuote").addEventListener("click", function(event){
     event.preventDefault()
     fetchRequest()
 })
@@ -16,6 +16,10 @@ let btn = document.querySelector("button").addEventListener("click", function(ev
 const randomLocation = () => {
     return `${Math.floor(Math.random() * 600)}px`;
   };
+
+const randomImage = () => {
+  return `${Math.floor(Math.random() * 3 + 1)}`
+}
 
 
 
@@ -34,10 +38,21 @@ const randomLocation = () => {
       const fetchImage = fetch("https://picsum.photos/1000")
       .then((data) => {
           
-        document.body.style.backgroundImage = "url('https://picsum.photos/900')"
+        document.body.style.backgroundImage = "url('https://picsum.photos/1000')"
       })
+  }
 
-      
+
+  function changeBackground(){
+    document.getElementById("changeBG").addEventListener('click', function(event){
+      event.preventDefault()
+      document.body.style.backgroundImage = `url(../img/${randomImage()}.jpeg)`
+      console.log(event)
+
+      if(document.body.style.backgroundImage == `url(../img/1.jpeg)`){
+        document.body.style.backgroundImage = `url(../img/2}.jpeg)`
+      } 
+    })
   }
 
   changeBackground()

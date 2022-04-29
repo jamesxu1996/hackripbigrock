@@ -2,15 +2,27 @@ body{
     height: 100vh;
     width: 100vw;
     margin: 0;
+    background-size: 100% 100%;
 }
+
 
 #br-west {
-    color: white;
+    background-color: black;
+    color: beige;
 }
 
-/* #br-says{
-    color: white;
-} */
+#brQuote{
+    width: 200px;
+}
+
+#brQuoteDiv{
+    display: flex;
+    justify-content: center;
+}
+
+#br-says{
+    margin-top: 50px;
+}
 
 #brPic {
     width: 70px;
@@ -25,3 +37,19 @@ body{
     border-radius: 50%;
     transition: 0.7s;
 }
+
+.whereHeDiv{
+    height: 200px;
+    width: 200px;
+}
+
+
+#changeBGDiv{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#changeBG{
+    margin: 15px;
+}
+

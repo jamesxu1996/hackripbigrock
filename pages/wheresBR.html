@@ -4,26 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="../styles/wheresBRStyles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-
  
     <title>Wheres Big Rock</title>
 </head>
 <body>
     <h1 id="br-west" class="display-1 text-center">Big Rock West</h1>
-    <button type="button" class="btn btn-secondary btn-lg btn-block">Big Rock Says:</button>
+    <div id="changeBGDiv">
+        
+        <button type="button" id ="changeBG" class="btn btn-info">Change Background</button>
+    </div>
+    <div id="brQuoteDiv">
+        <button type="button" id="brQuote" class="btn btn-secondary btn-lg btn-block">Big Rock Says:</button>
+    </div>
     <blockquote class="blockquote">
         <p id="br-says" class="text-center text-light bg-dark"></p>
     </blockquote>
     
-<div class="whereHe">
-    <img id="brPic" src="img/bigRock.png" alt="big rock">
-
+<div class="whereHeDiv">
+    <img id="brPic" src="../img/bigRock.png" alt="big rock">
 </div>
 
 
 
-<script src="src/wheresBR.js"></script>
+
+    <script src="../src/wheresBR.js"></script>
 </body>
 </html>
